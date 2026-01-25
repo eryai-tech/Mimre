@@ -1,0 +1,47 @@
+name: CI Validation
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    name: Type Check and Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Type Check (JSDoc)
+        run: |
+          if [ -f "jsconfig.json" ]; then
+            npx tsc --project jsconfig.json --skipLibCheck --maxNodeModuleJsDepth 0
+          else
+            echo "No jsconfig.json found, skipping type check"
+          fi
+      
+      - name: Build
+        run: |
+          if grep -q '"build"' package.json 2>/dev/null; then
+            echo "Running build..."
+            npm run build
+          else
+            echo "No build script found, skipping"
+          fi
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
