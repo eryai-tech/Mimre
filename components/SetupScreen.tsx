@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import styles from './SetupScreen.module.css';
 
 interface SetupScreenProps {
@@ -12,7 +12,13 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
       <div className={styles.content}>
         {/* Logo and Title */}
         <div className={styles.header}>
-          <div className={styles.logo}>🌿</div>
+          <Image 
+            src="/icons/icon-192.svg" 
+            alt="Mimre" 
+            width={80} 
+            height={80}
+            className={styles.logo}
+          />
           <h1 className={styles.title}>Mimre</h1>
           <p className={styles.subtitle}>Din digitale samtalevenn</p>
         </div>
@@ -30,7 +36,15 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
             className={`${styles.companionCard} ${styles.astrid}`}
             onClick={() => onSelect('astrid')}
           >
-            <div className={styles.avatar}>👵</div>
+            <div className={styles.avatarWrapper}>
+              <Image 
+                src="/icons/icon-192.svg" 
+                alt="Astrid" 
+                width={64} 
+                height={64}
+                className={styles.avatarImage}
+              />
+            </div>
             <h2 className={styles.name}>Astrid</h2>
             <p className={styles.role}>Varm og omsorgsfull</p>
             <p className={styles.bio}>
@@ -44,7 +58,15 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
             className={`${styles.companionCard} ${styles.ivar}`}
             onClick={() => onSelect('ivar')}
           >
-            <div className={styles.avatar}>👴</div>
+            <div className={styles.avatarWrapper}>
+              <Image 
+                src="/icons/icon-192.svg" 
+                alt="Ivar" 
+                width={64} 
+                height={64}
+                className={styles.avatarImage}
+              />
+            </div>
             <h2 className={styles.name}>Ivar</h2>
             <p className={styles.role}>Blid og jovial</p>
             <p className={styles.bio}>
@@ -58,6 +80,16 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
         <p className={styles.footer}>
           Dette valget kan endres senere i innstillinger.
         </p>
+
+        {/* Powered by */}
+        <a 
+          href="https://eryai.tech" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className={styles.poweredBy}
+        >
+          Powered by EryAI.tech
+        </a>
       </div>
     </div>
   );
