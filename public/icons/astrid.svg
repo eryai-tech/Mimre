@@ -1,0 +1,68 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="96" fill="#e8d5c4"/>
+  
+  <!-- Neck -->
+  <ellipse cx="96" cy="170" rx="28" ry="20" fill="#f0ddd0"/>
+  
+  <!-- Face -->
+  <ellipse cx="96" cy="100" rx="52" ry="58" fill="#f5e6dc"/>
+  
+  <!-- Hair - silver gray, soft curls -->
+  <ellipse cx="96" cy="55" rx="55" ry="35" fill="#c4c4c4"/>
+  <circle cx="50" cy="65" r="18" fill="#d0d0d0"/>
+  <circle cx="142" cy="65" r="18" fill="#d0d0d0"/>
+  <circle cx="65" cy="50" r="15" fill="#c8c8c8"/>
+  <circle cx="127" cy="50" r="15" fill="#c8c8c8"/>
+  <circle cx="96" cy="42" r="18" fill="#d4d4d4"/>
+  <circle cx="75" cy="55" r="12" fill="#cccccc"/>
+  <circle cx="117" cy="55" r="12" fill="#cccccc"/>
+  
+  <!-- Ears -->
+  <ellipse cx="44" cy="100" rx="8" ry="12" fill="#f0ddd0"/>
+  <ellipse cx="148" cy="100" rx="8" ry="12" fill="#f0ddd0"/>
+  
+  <!-- Eyebrows - soft, friendly -->
+  <path d="M62 82 Q72 78 82 82" stroke="#a0a0a0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M110 82 Q120 78 130 82" stroke="#a0a0a0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes - warm, kind -->
+  <ellipse cx="72" cy="95" rx="10" ry="7" fill="white"/>
+  <ellipse cx="120" cy="95" rx="10" ry="7" fill="white"/>
+  <circle cx="72" cy="96" r="5" fill="#6b8e7b"/>
+  <circle cx="120" cy="96" r="5" fill="#6b8e7b"/>
+  <circle cx="73" cy="94" r="2" fill="white"/>
+  <circle cx="121" cy="94" r="2" fill="white"/>
+  
+  <!-- Glasses - round, friendly -->
+  <circle cx="72" cy="95" r="16" stroke="#8b7355" stroke-width="2.5" fill="none"/>
+  <circle cx="120" cy="95" r="16" stroke="#8b7355" stroke-width="2.5" fill="none"/>
+  <path d="M88 95 L104 95" stroke="#8b7355" stroke-width="2.5"/>
+  <path d="M56 93 L44 88" stroke="#8b7355" stroke-width="2"/>
+  <path d="M136 93 L148 88" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Smile lines (crow's feet) -->
+  <path d="M52 92 Q48 95 52 98" stroke="#ddc8b8" stroke-width="1.5" fill="none"/>
+  <path d="M140 92 Q144 95 140 98" stroke="#ddc8b8" stroke-width="1.5" fill="none"/>
+  
+  <!-- Nose -->
+  <path d="M96 98 Q92 112 96 118 Q100 112 96 98" stroke="#ddc8b8" stroke-width="1.5" fill="none"/>
+  
+  <!-- Rosy cheeks -->
+  <ellipse cx="60" cy="115" rx="12" ry="8" fill="#e8b8a8" opacity="0.5"/>
+  <ellipse cx="132" cy="115" rx="12" ry="8" fill="#e8b8a8" opacity="0.5"/>
+  
+  <!-- Warm smile -->
+  <path d="M75 130 Q96 148 117 130" stroke="#c49a84" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Subtle smile lines -->
+  <path d="M70 128 Q68 132 70 136" stroke="#ddc8b8" stroke-width="1" fill="none"/>
+  <path d="M122 128 Q124 132 122 136" stroke="#ddc8b8" stroke-width="1" fill="none"/>
+  
+  <!-- Collar hint - cozy sweater -->
+  <path d="M60 165 Q96 175 132 165" stroke="#7a9c8a" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Pearl earrings -->
+  <circle cx="44" cy="108" r="4" fill="#f5f0e8"/>
+  <circle cx="148" cy="108" r="4" fill="#f5f0e8"/>
+</svg>

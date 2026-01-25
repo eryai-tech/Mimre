@@ -1,0 +1,64 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="96" fill="#d4e0d4"/>
+  
+  <!-- Neck -->
+  <ellipse cx="96" cy="170" rx="30" ry="22" fill="#e8d8c8"/>
+  
+  <!-- Face -->
+  <ellipse cx="96" cy="102" rx="54" ry="60" fill="#f2e2d4"/>
+  
+  <!-- Hair - balding, gray on sides -->
+  <ellipse cx="96" cy="52" rx="48" ry="22" fill="#f2e2d4"/>
+  <path d="M48 65 Q42 50 55 45 Q48 60 48 75" fill="#b0b0b0"/>
+  <path d="M144 65 Q150 50 137 45 Q144 60 144 75" fill="#b0b0b0"/>
+  <path d="M52 80 Q45 65 52 55" fill="#a8a8a8"/>
+  <path d="M140 80 Q147 65 140 55" fill="#a8a8a8"/>
+  
+  <!-- Ears - slightly larger -->
+  <ellipse cx="42" cy="100" rx="10" ry="14" fill="#e8d8c8"/>
+  <ellipse cx="150" cy="100" rx="10" ry="14" fill="#e8d8c8"/>
+  
+  <!-- Eyebrows - bushy, friendly -->
+  <path d="M58 80 Q70 74 82 80" stroke="#909090" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M110 80 Q122 74 134 80" stroke="#909090" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes - kind, with laugh lines -->
+  <ellipse cx="72" cy="95" rx="9" ry="6" fill="white"/>
+  <ellipse cx="120" cy="95" rx="9" ry="6" fill="white"/>
+  <circle cx="72" cy="95" r="4.5" fill="#5a7a6a"/>
+  <circle cx="120" cy="95" r="4.5" fill="#5a7a6a"/>
+  <circle cx="73" cy="94" r="1.5" fill="white"/>
+  <circle cx="121" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Crow's feet - laugh lines -->
+  <path d="M54 90 Q50 95 54 100" stroke="#d8c8b8" stroke-width="1.5" fill="none"/>
+  <path d="M52 92 Q47 95 52 98" stroke="#d8c8b8" stroke-width="1" fill="none"/>
+  <path d="M138 90 Q142 95 138 100" stroke="#d8c8b8" stroke-width="1.5" fill="none"/>
+  <path d="M140 92 Q145 95 140 98" stroke="#d8c8b8" stroke-width="1" fill="none"/>
+  
+  <!-- Nose - slightly larger, friendly -->
+  <path d="M96 95 Q90 110 92 120 Q96 124 100 120 Q102 110 96 95" stroke="#d8c8b8" stroke-width="1.5" fill="#f0e0d0"/>
+  
+  <!-- Rosy cheeks -->
+  <ellipse cx="58" cy="115" rx="10" ry="7" fill="#d8a898" opacity="0.4"/>
+  <ellipse cx="134" cy="115" rx="10" ry="7" fill="#d8a898" opacity="0.4"/>
+  
+  <!-- Big friendly smile -->
+  <path d="M70 132 Q96 155 122 132" stroke="#b8887a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Teeth hint -->
+  <path d="M78 135 Q96 145 114 135" fill="white" opacity="0.8"/>
+  
+  <!-- Smile lines -->
+  <path d="M65 125 Q62 132 66 140" stroke="#d8c8b8" stroke-width="1.5" fill="none"/>
+  <path d="M127 125 Q130 132 126 140" stroke="#d8c8b8" stroke-width="1.5" fill="none"/>
+  
+  <!-- Forehead lines - wisdom lines -->
+  <path d="M70 60 Q96 55 122 60" stroke="#e0d0c0" stroke-width="1" fill="none"/>
+  <path d="M75 67 Q96 63 117 67" stroke="#e0d0c0" stroke-width="1" fill="none"/>
+  
+  <!-- Collar - casual shirt -->
+  <path d="M55 162 L75 172 L96 165 L117 172 L137 162" stroke="#5a7c6a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="96" cy="168" r="3" fill="#4a6c5a"/>
+</svg>
