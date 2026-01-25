@@ -313,6 +313,9 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
             </svg>
           </button>
         </div>
+        <div className={styles.poweredBy}>
+          Powered by <a href="https://eryai.tech" target="_blank" rel="noopener noreferrer">EryAI.tech</a>
+        </div>
       </footer>
     </div>
   );
