@@ -21,10 +21,12 @@ const ENGINE_URL = process.env.NEXT_PUBLIC_ENGINE_URL || 'https://eryai-engine.v
 const COMPANION_INFO = {
   astrid: {
     name: 'Astrid',
+    avatar: '/icons/astrid.svg',
     greeting: 'Hei, kjære deg! Så hyggelig å snakke med deg. Hvordan har du det i dag?'
   },
   ivar: {
     name: 'Ivar',
+    avatar: '/icons/ivar.svg',
     greeting: 'Hei der! Hyggelig å prate med deg. Hvordan står det til?'
   }
 };
@@ -182,7 +184,7 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
         <div className={styles.headerInfo}>
           <div className={styles.headerAvatar}>
             <Image 
-              src="/icons/icon-192.svg" 
+              src={info.avatar} 
               alt={info.name} 
               width={48} 
               height={48}
@@ -233,7 +235,7 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
             {message.role === 'assistant' && (
               <div className={styles.messageAvatar}>
                 <Image 
-                  src="/icons/icon-192.svg" 
+                  src={info.avatar} 
                   alt={info.name} 
                   width={32} 
                   height={32}
@@ -256,7 +258,7 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
           <div className={`${styles.messageWrapper} ${styles.assistantWrapper}`}>
             <div className={styles.messageAvatar}>
               <Image 
-                src="/icons/icon-192.svg" 
+                src={info.avatar} 
                 alt={info.name} 
                 width={32} 
                 height={32}
