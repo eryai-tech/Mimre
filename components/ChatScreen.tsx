@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import styles from './ChatScreen.module.css';
 
 interface Message {
@@ -20,12 +21,10 @@ const ENGINE_URL = process.env.NEXT_PUBLIC_ENGINE_URL || 'https://eryai-engine.v
 const COMPANION_INFO = {
   astrid: {
     name: 'Astrid',
-    avatar: '👵',
     greeting: 'Hei, kjære deg! Så hyggelig å snakke med deg. Hvordan har du det i dag?'
   },
   ivar: {
     name: 'Ivar',
-    avatar: '👴',
     greeting: 'Hei der! Hyggelig å prate med deg. Hvordan står det til?'
   }
 };
@@ -181,7 +180,15 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.headerInfo}>
-          <div className={styles.headerAvatar}>{info.avatar}</div>
+          <div className={styles.headerAvatar}>
+            <Image 
+              src="/icons/icon-192.svg" 
+              alt={info.name} 
+              width={48} 
+              height={48}
+              className={styles.headerAvatarImage}
+            />
+          </div>
           <div>
             <h1 className={styles.headerName}>{info.name}</h1>
             <p className={styles.headerStatus}>
@@ -224,7 +231,15 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
             style={{ animationDelay: `${index * 0.05}s` }}
           >
             {message.role === 'assistant' && (
-              <div className={styles.messageAvatar}>{info.avatar}</div>
+              <div className={styles.messageAvatar}>
+                <Image 
+                  src="/icons/icon-192.svg" 
+                  alt={info.name} 
+                  width={32} 
+                  height={32}
+                  className={styles.messageAvatarImage}
+                />
+              </div>
             )}
             <div
               className={`${styles.messageBubble} ${
@@ -239,7 +254,15 @@ export default function ChatScreen({ companion, onReset }: ChatScreenProps) {
         {/* Typing indicator */}
         {isLoading && (
           <div className={`${styles.messageWrapper} ${styles.assistantWrapper}`}>
-            <div className={styles.messageAvatar}>{info.avatar}</div>
+            <div className={styles.messageAvatar}>
+              <Image 
+                src="/icons/icon-192.svg" 
+                alt={info.name} 
+                width={32} 
+                height={32}
+                className={styles.messageAvatarImage}
+              />
+            </div>
             <div className={`${styles.messageBubble} ${styles.assistantBubble} ${styles.typing}`}>
               <span className={styles.typingDot}></span>
               <span className={styles.typingDot}></span>
