@@ -38,7 +38,7 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
           >
             <div className={styles.avatarWrapper}>
               <Image 
-                src="/icons/icon-192.svg" 
+                src="/icons/astrid.svg" 
                 alt="Astrid" 
                 width={64} 
                 height={64}
@@ -60,7 +60,7 @@ export default function SetupScreen({ onSelect }: SetupScreenProps) {
           >
             <div className={styles.avatarWrapper}>
               <Image 
-                src="/icons/icon-192.svg" 
+                src="/icons/ivar.svg" 
                 alt="Ivar" 
                 width={64} 
                 height={64}
