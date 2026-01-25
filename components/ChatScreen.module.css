@@ -35,6 +35,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.headerAvatarImage {
+  border-radius: var(--radius-full);
 }
 
 .headerName {
@@ -125,6 +130,14 @@
 .messageAvatar {
   font-size: 1.8rem;
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.messageAvatarImage {
+  border-radius: var(--radius-full);
 }
 
 .messageBubble {
@@ -231,6 +244,25 @@
 .sendButton:disabled {
   background: var(--color-text-muted);
   cursor: not-allowed;
+}
+
+/* Powered by footer */
+.poweredBy {
+  text-align: center;
+  padding: 8px 0 4px 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.poweredBy a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.poweredBy a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
 }
 
 /* Safe area for iOS */
