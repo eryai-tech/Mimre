@@ -251,18 +251,8 @@
   text-align: center;
   padding: 8px 0 4px 0;
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.poweredBy a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.poweredBy a:hover {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: underline;
+  color: var(--color-text-muted);
+  opacity: 0.6;
 }
 
 /* Safe area for iOS */
